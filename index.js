@@ -1,4 +1,4 @@
-/*
+
 const mycheckbox = document.getElementById('mycheckbox');
 const visa = document.getElementById('visa');
 const mastercard = document.getElementById('mastercard');
@@ -22,9 +22,9 @@ submitbtn.onclick = function(){
         subresult.textContent='paid via mastercard'
     else if(paypal.checked)
         subresult.textContent='paid via paypal'
-}*/
+}
 
-/*checkbox and radio btn
+/*checkbox and radio btn*/
 
 const mycheckbox=document.getElementById("mycheckbox");
 const visa=document.getElementById("visa");
@@ -57,3 +57,4 @@ subbtn.onclick=function(){
     }
 
 } */
+
