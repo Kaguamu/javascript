@@ -56,5 +56,49 @@ subbtn.onclick=function(){
         radiost.textContent="you have not paid"
     }
 
-} */
+} 
+    
+/*function to combine  numbers using rest parameter*/
+function sunNum(...numbers){
+    return numbers;
+}
+const num1=1;
+const num2=2;
+const num3=3;
+const num4=4;
+const num5=5;
+
+
+let numbers=sunNum(num1,num2,num3,num4);
+console.log(...numbers);*/
+
+/*function to combine strings -rest  parameter
+function combineStrings(...string){
+    return string.join("");
+}
+
+let fullName=combineStrings("mr","Duncan");
+console.log(fullName);
+
+
+
+/*call back*/
+hello(goodbye);
+function hello(callback){
+    console.log("hello");
+    callback();
+}
+ function goodbye(){
+    console.log("goodbye")
+ }
+
+sum(displayConsole,1,2);
+
+function sum(callback,x,y){
+    let result=x+y;
+    callback(result);
+}
+function displayConsole(result){
+    console.log(result);
+}
 
