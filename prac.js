@@ -1,28 +1,26 @@
-/*for(let i=10;i>=1;i--){
+
+for(let i=10;i>=1;i--){
     if(i==6){
         continue;
     }
     console.log(i);
-}*/
-
-/*
+}
+//function to multiply 2 numbers
 function multiply(x,y){
     let result=x*y;
     return result;
 }
 let answer=multiply(4,8);
 console.log(answer);
-*/
 
-/*
+//function to check if an email is valid
 function is_valid(email){
     return email.includes("@")
 }
-
-
 let valid=is_valid("duncangmail.com");
 console.log(valid);*/
-/*
+
+//prac on arrays
 let fruits=["banana","mango","orange"];
 fruits.pop();
 fruits.unshift("coconut");
@@ -33,15 +31,14 @@ for(fruit of fruits){
 }
 let index=fruits.indexO   f("mango");
 console.log(index);
-*/
 
-/*
+
+//array with numbers
 let num=[1,2,3,4,5,6]
 let maxnum=Math.min(...num);
 console.log(maxnum);
-*/
 
-/*
+//prac on using (...rest) operator
 const fname = "Mr";
 const sname = "Duncan";
 
@@ -49,9 +46,8 @@ function your_name(...fullname){
     console.log(fullname);
 }
 your_name(fname,sname);
-*/
 
-/*
+//prac on callbacks
 hello(goodbye)
 function hello(callback){
     console.log("hello");
@@ -67,9 +63,8 @@ function goodbye(){
 function seeya(){
     console.log("see yall");
 }
-*/
 
-/*
+//callback
 add(displayconsole,2,3);
 function add(callback,x,y){
     let result = x+y;
@@ -77,31 +72,25 @@ function add(callback,x,y){
 }
 function displayconsole(result){
     console.log(result)
-}*/
-/*
+}
+
+//prac on forEach
 let us=["kai", "key", "me"]
 us.forEach(show_us);
-
-
 function show_us(element){
     console.log(element)
 }
-*/
-
-/*
-
+//prac on forEach()
 let user="duncan";
-
-
 user.forEach(capitaliz);
 user.forEach(display);
 function capitaliz(element,array,index){
     array[index]=element.charAt(0).toUpperCase()+element.slice(1);
     console.log
-}*/
+}
 
 //map()accepts a callback and applies that function to each element of an array, then return a new array
-/*const num=[1,2,3,4,5]
+const num=[1,2,3,4,5]
 
 const squares =num.map(square);
 console.log(squares);
@@ -110,11 +99,9 @@ function square(element){
 }
 function dis(){
     console.log(element);
-}*/
+}
 
-
-
-/*
+//prac on map()
 const students=["Kai","Kay","Me"]
 const upstudents=students.map(uppercase);
 const lostudents=students.map(lowercase);
@@ -126,8 +113,7 @@ function uppercase(element){
 function lowercase(element){
     return element.toLowerCase();   
 }
-*/
-
+//date formating prac on map()
 const date=["9/14/2025","3/4/2026","1/24/2030"];
 const formdate=date.map(formatdate);
 console.log(formdate);
@@ -137,6 +123,7 @@ function formatdate(element){
     const parts=element.split("/");
     return `${parts[2]}-${parts[0]}-${parts[1]}`
 }
+
 
 
 
