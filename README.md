@@ -1,4 +1,4 @@
-JavaScript Practice Projects
+📄 JavaScript Practice Projects
 
 This repository contains a series of small web projects built with JavaScript, designed to demonstrate and improve my understanding of core JavaScript concepts and client-side interactivity.
 
@@ -24,9 +24,9 @@ As I continue building, this repository will grow with new projects that reflect
 
 HTML5
 
-CSS3 
+CSS3
 
-JavaScript 
+JavaScript
 
 🎯 Goals:
 
