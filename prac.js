@@ -124,6 +124,62 @@ function formatdate(element){
     return `${parts[2]}-${parts[0]}-${parts[1]}`
 }
 
+// Filter out the even number using the .filter()method
+let number=[1,2,3,4,5,6,7,8];
+let  evenNum= number.filter(isEven);
+console.log(evenNum);
+
+function isEven(element){
+    return element%2===0;
+}
+
+
+//filtering  out adults in the  list of ages
+let  ages=[16,14,19,19,20,21,23,24,34,56,43,22];
+let  adults=ages.filter(isAdult);
+console.log(adults);
+
+
+function isAdult(element){
+    return element>=18;
+}
+// an application of filter to get words that have less than 6 chars
+const words =["orange","banana","mango","coconut","pamanganete"]
+const shortword =  words.filter(shword);
+console.log(shortword);
+
+function shword(element){
+    return element.length <= 6;
+}
+
+
+let prices=[10,20,30,40,50];
+
+const answer=prices.reduce(sum);
+console.log(answer);
+
+
+function sum(accumulator,element){
+    return accumulator + element;
+}*/
+
+const grades=[50,55,99,96,89,90];
+const highest=grades.reduce(high);
+console.log(high);
+
+
+function high(element){
+    return Math.max(element);
+}
+
+
+
+
+
+
+
+
+
 
 
 
