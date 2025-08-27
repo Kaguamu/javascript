@@ -172,6 +172,18 @@ function high(element){
     return Math.max(element);
 }
 
+//function expression
+function hello(){
+    console.log("hello");
+}
+hello();
+
+const hi= function(){
+    console.log("Hi user");
+}
+hi();
+
+
 
 
 
