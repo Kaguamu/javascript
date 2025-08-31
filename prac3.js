@@ -80,6 +80,60 @@ console.log(cubes);
 function cube(element){
     return Math.pow(element,3)
 }
+//objects in js
+const person  ={
+    firstName:"bro",
+    lastName:"code",
+    age:90,
+    is_employed:false,
+    sayHello: function(){console.log("hi there u good?")}
+}
+console.log(person.firstName);
+console.log(person.lastName);
+console.log(person.age);
+console.log(person.is_employed);
+person.sayHello();
+const person2  ={
+    firstName:"spongebob",
+    lastName:"squarepants",
+    age:30,
+    is_employed:true,
+}
+console.log(person2.firstName);
+console.log(person2.lastName);
+console.log(person2.age);
+console.log(person2.is_employed);
+
+//object and 'this'  
+const person911 ={
+    name:"spongebob",
+    other:"squaarepaant",
+    sayHi: function(){console.log(`your full name is ${this.name + this.other}`)}
+}
+person911.sayHi();
+
+//console.log(this);
+
+//constructor in js
+function Car(make,model,year,color){
+    this.make=make,
+    this.model=model,
+    this.year=year,
+    this.color=color
+}
+
+const car1 =  new Car("Toyota","Corolla",2020,"red");
+const car2 = new Car("Audi","A6",2023,"black");
+console.log(car1.make);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.color);
+
+console.log(car2.make);
+console.log(car2.model);
+console.log(car2.year);
+console.log(car2.color);
+
 
 
 
