@@ -1,24 +1,27 @@
-/*var hello=function(){
+//creating a function expression using var
+var hello=function(){
     console.log("hello user")
 }
+hello();
 
-hello();*/
-
-
-/*setTimeout(function(){
+//a setTimeout function expression
+setTimeout(function(){
     console.log("hello user")
 },2000)*/
-/*const num=[1,2,3,4,5,6,8];
+
+//function expression using the map() method    
+const num=[1,2,3,4,5,6,8];
 const squares= num.map(function (element){
     return Math.pow(element,2);
 });
-console.log(squares);*/
+console.log(squares);
 
-/*const hello=() => console.log("Hello");
+// using function arrow 
+const hello=() => console.log("Hello");
 hello();
-*/
 
-/*const hello=(name,age) => {console.log(`hello ${name}`);
+// using function arrow
+const hello=(name,age) => {console.log(`hello ${name}`);
                     console.log(`you are ${age} years old`)}
 hello("bro",39);*/
 
@@ -80,13 +83,7 @@ function cube(element){
 }*/
 
 
-const person  ={
-    firstName:"bro",
-    lastName:"code",
-    age:90,
-    is_employed:false,
-}
-console.log(person.firstName);
+
 
 
 
