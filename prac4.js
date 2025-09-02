@@ -1,4 +1,5 @@
-/*const person1={
+
+const person1={
     firstName:"bro",
     lastName:"code",
     age:39,
@@ -6,8 +7,6 @@
 }
 }
 person1.sayHello();
-
-
 
 const student={
     name:"dun mutiga",
@@ -18,7 +17,8 @@ const student={
 
 
 student.display();*/
-/*
+
+
 function Person(fname,lname,age){
     this.fname=fname,
     this.lname=lname,
@@ -34,7 +34,6 @@ console.log(person2. age)
 
 person1.display();*/
 
-/*
 function Car(make,model,year,color){
     this.make=make,
     this.model=model,
@@ -47,7 +46,6 @@ const car1=new Car("toyota","Corolla",1994,"white");
 console.log(car1.make);*/
 
 //constructor
-/*
 function Product(name,price){
     this.name=name,
     this.price=price,
@@ -59,10 +57,9 @@ const product2=new Product("pants","$29.99");
 
 
 console.log(product1);
-product1.display();*/
+product1.display();
 
-
-/*class Products{
+class Products{
       constructor(name,price){
       this.name =name,
       this.price =price
@@ -75,9 +72,10 @@ product1.display();*/
 const product1=new Products("shirt",19.99);
 const product2=new Products("pants",29.99);
 product1.display();
-product2.display();*/
+product2.display();
 
 class Mathutil{
     static  PI=22/7;
 }
+
 console.log(Mathutil.PI.toFixed(20));
