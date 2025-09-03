@@ -1,4 +1,4 @@
-/*
+
 //object
 const product={
     pname:"shirt",
@@ -43,3 +43,4 @@ class Mathutil{
 }
 console.log(Mathutil.PI);
 console.log(Mathutil.getDiameter(10));
+
