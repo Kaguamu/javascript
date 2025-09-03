@@ -79,3 +79,51 @@ class Mathutil{
 }
 
 console.log(Mathutil.PI.toFixed(20));
+
+let  x=3;
+function one(){
+    let x=2;
+    console.log(x)
+}
+function two(){
+    let x=383;
+    console.log(x)
+}
+
+console.log(x);
+two();
+one();
+let fruits=["mango","banana","orange"];
+//fruits[0]="coconut";
+
+fruits.push("avocado");
+fruits.sort();
+console.log(fruits);
+
+let num=[1,2,3,4,5,6,7,8];
+let fruits=["mango","banana","orange"];
+let all=[...fruits,...num,...fruits];
+console.log(all);
+
+let names="duncan";
+let fchar=[...names[0]]
+
+console.log(fchar);
+
+function OpenFridge(...foods){
+    console.log(foods);
+}
+let food1="Pizza";
+let food2="pork";
+OpenFridge(food1,food2);
+OpenFridge("chapo","beans");
+
+
+function CombineStrings(...Strings){
+    return Strings.join(" ");
+}
+
+let fullName=CombineStrings("mr","mutiga");
+console.log(fullName);
+
+
