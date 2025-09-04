@@ -1,4 +1,4 @@
-
+//object and 'this'
 const person1={
     firstName:"bro",
     lastName:"code",
@@ -7,16 +7,13 @@ const person1={
 }
 }
 person1.sayHello();
-
 const student={
     name:"dun mutiga",
     age:30,
     is_rich:false,
     display:function(){console.log(`Your name is ${this.name} you are ${this.age} years old and you are broke ${this.is_rich}`)}
 }
-
-
-student.display();*/
+student.display();
 
 
 function Person(fname,lname,age){
@@ -32,16 +29,14 @@ console.log(person1. fname);
 console.log(person2. lname);
 console.log(person2. age)
 
-person1.display();*/
-
+person1.display();
+//constructor
 function Car(make,model,year,color){
     this.make=make,
     this.model=model,
     this.year=year,
     this.color=color
 }
-
-
 const car1=new Car("toyota","Corolla",1994,"white");
 console.log(car1.make);*/
 
@@ -59,6 +54,7 @@ const product2=new Product("pants","$29.99");
 console.log(product1);
 product1.display();
 
+//class-structured way to represent object rather than traditional constructors
 class Products{
       constructor(name,price){
       this.name =name,
@@ -79,7 +75,7 @@ class Mathutil{
 }
 
 console.log(Mathutil.PI.toFixed(20));
-
+//static anad global variable
 let  x=3;
 function one(){
     let x=2;
@@ -93,6 +89,8 @@ function two(){
 console.log(x);
 two();
 one();
+
+// array  and their method
 let fruits=["mango","banana","orange"];
 //fruits[0]="coconut";
 
@@ -105,6 +103,7 @@ let fruits=["mango","banana","orange"];
 let all=[...fruits,...num,...fruits];
 console.log(all);
 
+//array prac
 let names="duncan";
 let fchar=[...names[0]]
 
@@ -125,5 +124,6 @@ function CombineStrings(...Strings){
 
 let fullName=CombineStrings("mr","mutiga");
 console.log(fullName);
+
 
 
