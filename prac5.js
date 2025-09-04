@@ -44,3 +44,17 @@ class Mathutil{
 console.log(Mathutil.PI);
 console.log(Mathutil.getDiameter(10));
 
+class user{
+    static usercount=0;
+
+    constructor(name){
+        this.name=name;
+        this.usercount++;
+    }
+}
+
+const user1=new user("duncan")
+console.log(user1.name);
+
+
+
