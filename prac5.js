@@ -56,9 +56,6 @@ class user{
 const user1=new user("duncan")
 console.log(user1.name);
 
-
-
-
 class user{
     static usercount=0;
 
@@ -84,6 +81,7 @@ console.log(user3.name);
 console.log(user.usercount)
 user1.dispname();
 user.getUsercount();*/
+
 
 
 
