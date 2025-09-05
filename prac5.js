@@ -58,3 +58,32 @@ console.log(user1.name);
 
 
 
+
+class user{
+    static usercount=0;
+
+    constructor(name){
+        this.name=name;
+        user.usercount++
+    }
+    dispname(){
+        console.log(`your username is ${this.name}`);
+    }
+    static getUsercount(){
+        console.log(`there are ${user.usercount} counts`)
+    }
+}
+
+const user1=new user("duncan");
+const user2=new user("dunc");
+const user3=new user("du");
+
+console.log(user1.name);
+console.log(user2.name);
+console.log(user3.name);
+console.log(user.usercount)
+user1.dispname();
+user.getUsercount();*/
+
+
+
