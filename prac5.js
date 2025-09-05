@@ -133,6 +133,80 @@ console.log(fish);
 fish.eat();
 fish.swim();
 
+/*class People{
+    constructor(name, age, occupation){
+    this.name=name,
+    this.age=age,
+    this.occupation=occupation
+    } 
+    
+}
+class student extends People{
+    constructor(name, age, occupation){
+    super(name, age, occupation)
+    this.display=function(){console.log(`your name is ${this.name} you are ${this.age} and your occupation is ${this.occupation}`)}
+    
+    }
+}
+class workers extends People{
+    constructor(name, age, occupation){
+    super(name, age, occupation)
+    this.display=function(){console.log(`your name is ${this.name} you are ${this.age} and your occupation is ${this.occupation}`)}
+    }
+}
+class billionares extends People{
+    constructor(name,age,occupation){
+    super(name, age, occupation)
+    this.display=function(){console.log(`your name is ${this.name} you are ${this.age} and your occupation is ${this.occupation}`)}
+    
+    }
+}
+const Student=new student("Peter",29,"reading")
+const Worker=new workers("gtp",29,"labour")
+const Billionare=new billionares("Peter",29,"Binesses")
+
+console.log(Student.name);
+Student.display();
+Billionare.display();*/
+
+
+class rectangle{
+    constructor(width,height){
+        this.width=width,
+        this.height=height
+    }
+
+    set width(newWidth){
+        if(newWidth>0){
+            this._width=newWidth
+        }
+        else{
+            console.error("width must be a  positive number")
+        }
+    }
+    set height(newHeight){
+        if(newHeight > 0){
+            this._height=newHeight
+        }
+        else{
+            console.error("height must be a  positive number")
+        }
+    }
+    get width(){
+        return this._width;
+    }
+
+    get height(){
+        return this._height;
+    }
+ 
+}
+const rec = new rectangle(800,90);
+console.log(rec.height);
+console.log(rec.width);
+
+
+
 
 
 
