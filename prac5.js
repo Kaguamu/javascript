@@ -80,7 +80,60 @@ console.log(user2.name);
 console.log(user3.name);
 console.log(user.usercount)
 user1.dispname();
-user.getUsercount();*/
+user.getUsercount();
+
+//inheritance
+class animal{
+    static alive=true;
+
+    eat(){
+        console.log(`the ${this.name} is eating`);
+    }
+    sleep(){
+        console.log(`the ${this.name} is sleeping`);
+    }
+}
+
+class Rabbit extends animal{
+    name="rabbit";
+
+    run(){
+        console.log(`this ${this.name}is running`)
+    }
+}
+class Fish extends animal{
+    name="fish";
+    swim(){
+        console.log(`this ${this.name}is swimming`)
+    }
+}
+class Hawk extends animal{
+    name="hawk";
+    fly(){
+        console.log(`this ${this.name}is flying`)
+    }
+} 
+const rabbit= new Rabbit();
+const fish= new Fish();
+const hawk= new Hawk();
+
+console.log(Rabbit.alive);
+console.log(rabbit);
+rabbit.eat();
+rabbit.run();
+
+
+console.log(Hawk.alive);
+console.log(hawk);
+hawk.eat();
+hawk.fly();
+
+console.log(Fish.alive);
+console.log(fish);
+fish.eat();
+fish.swim();
+
+
 
 
 
