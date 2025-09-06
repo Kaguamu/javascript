@@ -227,6 +227,43 @@ const user5=new user("bro",39);
 user1.display();
 console.log(user.usercount)
 
+user1.display();
+console.log(user.usercount)
+
+
+/*
+class animals{
+    static alive = true;
+    eat = () => {console.log(`this ${this.name} is eating`)}
+    sleep = () => {console.log(`this ${this.name} is sleeping`)}
+}
+class Rabbit extends animals{
+    name="rabbit";
+}
+const rabbit=new Rabbit()
+console.log(rabbit)*/
+
+//super-used in classes to call the construtor or access the properties or methods of a parent
+/*class people{
+    constructor(name,age,occupation){
+        this.name=name,
+        this.age=age,
+        this.occupation=occupation
+        this.display=function(){console.log(`${this.name} ${this.age} ${this.occupation}`)}
+    //display = () =>{console.log(`${this.name} ${this.age} ${this.occupation}`)}
+}
+}
+class student extends people{
+    constructor(name,age,occupation){
+        super(name,age,occupation)
+        this.display();
+    }
+}
+const student1=new student("bro",20,"youtuber");
+student1.display();*/
+
+
+
 
 
 
