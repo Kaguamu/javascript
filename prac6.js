@@ -174,7 +174,7 @@ const car1=new Car("Toyota", "Corolla", "2006","black");
 
 car1.display();*/
 
-/*class Car{
+class Car{
     constructor(make, model, year,color){
     this.make=make,
     this.model=model,
@@ -188,10 +188,9 @@ const car2= new Car("Lamboghini","Urus",2025,"white");
 
 car1.display();
 car2.display();
-console.log(car2.model)*/
+console.log(car2.model)
 
 //class and static keyword
-/*
 class animals{
     static alive=true;
     constructor(name,age,movement){
@@ -208,7 +207,7 @@ const Hawk= new animals("hawk",38,"flying");
 Rabbit.display();
 Hawk.display();
 console.log(animals.alive)
-*/
+
 class user{
     static usercount=0;
     constructor(name,age){
@@ -230,8 +229,6 @@ console.log(user.usercount)
 user1.display();
 console.log(user.usercount)
 
-
-/*
 class animals{
     static alive = true;
     eat = () => {console.log(`this ${this.name} is eating`)}
@@ -241,10 +238,10 @@ class Rabbit extends animals{
     name="rabbit";
 }
 const rabbit=new Rabbit()
-console.log(rabbit)*/
+console.log(rabbit)
 
 //super-used in classes to call the construtor or access the properties or methods of a parent
-/*class people{
+class people{
     constructor(name,age,occupation){
         this.name=name,
         this.age=age,
@@ -260,7 +257,8 @@ class student extends people{
     }
 }
 const student1=new student("bro",20,"youtuber");
-student1.display();*/
+student1.display();
+
 
 
 
