@@ -172,9 +172,51 @@ const person1=new Person("bro",30,"1234 conch",
                                   "Bikini bottom");
 const person2=new Person("patrick",37,"1324 conch",
                                   "Int waters",
-                                  "Bikini bottom");
+                                  "Bikini bottom")
 console.log(person1)
 console.log(person2.address)
+
+
+//array of object 
+const fruits =[{name:"banana",color:"yellow",calories:40},
+               {name:"pineapple",color:"yellow",calories:50},
+               {name:"orange",color:"orange",calories:60},
+               {name:"mango",color:"yellow",calories:95}];
+
+fruits.unshift({name:"coconut",color:"brown",calories:40})        
+console.log(fruits[0])
+//using forEach to display all the elements
+fruits.forEach(function display(element){
+    console.log(element)
+})
+fruits.forEach(fruit=>console.log(fruit))
+
+
+//using .map() to display the  fruit names
+const fruitNames=fruits.map(fruit=>fruit.name);
+console.log(fruitNames);t
+
+
+//using .map() to display the  fruit color
+const fruitColor=fruits.map(fruit=>fruit.color);
+console.log(fruitColor);
+
+//using the filter method to show all the fruits with the yellow color
+const yellowFruits=fruits.filter(fruit=>fruit.color==="yellow");
+console.log(yellowFruits);
+
+
+//using filter method to show all the fruits with calories greater than 50
+const highcalfruits=fruits.filter(fruit=>fruit.calories>50);
+console.log(highcalfruits)
+
+
+//using the reduce method to show the fruit with the highest calories
+const maxFruit= fruits.reduce((accumulator,element) =>
+                               element.calories>accumulator.calories ?
+                                element:accumulator)
+
+console.log(maxFruit);
 
 
 
