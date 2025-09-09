@@ -1,4 +1,5 @@
-/*class rectangle{
+//working with setter and getter
+class rectangle{
     constructor(width,height){
         this.width=width;
         this.height=height
@@ -29,9 +30,9 @@
 
 const rect = new rectangle(10,20);
 console.log(rect.width);
-console.log(rect.height);*/
+console.log(rect.height);
 
-
+//more practise with setter and getter to check whether the input name and age are valid
 class person{
     constructor(fname,lname,age){
         this.fname=fname;
@@ -75,4 +76,5 @@ class person{
 const person1=new person("broo","pizza",20)
 console.log(person1.fname);
 console.log(person1.lname);
+
 console.log(person1.age)
