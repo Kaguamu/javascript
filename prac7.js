@@ -134,5 +134,47 @@ const Person={
     job:"Youtuber"
 }
 displayPerson(Person);
+//NESTED OBJECTS
+const person={
+    fullname:"bro code",
+    age:30,
+    is_student:false,
+    job:"youtuber",
+    address:{
+        street:"tom",
+        city:"Nairobi",
+        country:"Uganda"
+    }
+}
+
+for(const property in person.address){
+    console.log(person.address[property])
+}
+
+//more complex nested object use  of class
+class Person {
+    constructor(name,age,...address){
+    this.name=name;
+    this.age=age;
+    this.address = new Address(...address)
+}
+}
+class Address{
+    constructor(street,country,city){
+    this.street=street;
+    this.country=country;
+    this.city=city;
+    }
+}
+
+const person1=new Person("bro",30,"1234 conch",
+                                  "Int waters",
+                                  "Bikini bottom");
+const person2=new Person("patrick",37,"1324 conch",
+                                  "Int waters",
+                                  "Bikini bottom");
+console.log(person1)
+console.log(person2.address)
+
 
 
