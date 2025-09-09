@@ -120,3 +120,19 @@ const Person2={
 
 const {firstname,secondname,age,job} = Person2;
 console.log(firstname + " " + secondname);
+
+//destructure in function parameter
+function displayPerson({firstname,secondname,age,job}){
+    console.log(`name:${firstname} ${secondname}`)
+    console.log(`Age:${age}`)
+    console.log(`${job}`)
+}
+const Person={
+    firstname:"bro",
+    secondname:"ccode",
+    age:101,
+    job:"Youtuber"
+}
+displayPerson(Person);
+
+
