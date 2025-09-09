@@ -95,8 +95,28 @@ const colors=["red","green","maroon","violet","purple"];
 console.log(colors);
 
 
+//assigning array elements to a variable
+let colors=["red","green","maroon","violet","purple"];
+let [fcolor,scolor,thirdcolor,lastcolor,...extracolors] = colors;
+console.log(fcolor);
+console.log(scolor);
+console.log(thirdcolor)
+console.log(lastcolor)
+console.log(extracolors)
 
+//extract values from an object
+const Person={
+    firstname:"bro",
+    secondname:"ccode",
+    age:101,
+    job:"Youtuber"
+}
+const Person2={
+    firstname:"Sponge",
+    secondname:"bob",
+    age:30,
+    job:"actor"
+}
 
-
-console.log(person1.age)
-
+const {firstname,secondname,age,job} = Person2;
+console.log(firstname + " " + secondname);
