@@ -72,9 +72,31 @@ class person{
     get age(){
         return this._age
     }
+    get fullname(){
+        return this._fname + " " + this._lname
+    }
 }
 const person1=new person("broo","pizza",20)
 console.log(person1.fname);
 console.log(person1.lname);
+console.log(person1.fullname)
+console.log(person1.age)
+
+//destructuring
+//swapping the values of 2 variables
+let a=10;
+let b=20;
+[a, b]=[b,a];
+console.log(b);
+
+//swapping 2 elements in an array
+const colors=["red","green","maroon","violet","purple"];
+[colors[0],colors[4]] = [colors[4],colors[0]];
+console.log(colors);
+
+
+
+
 
 console.log(person1.age)
+
