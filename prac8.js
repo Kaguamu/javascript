@@ -34,3 +34,31 @@ let person=[{name:"spongebob",age:37,gpa:3.5},
 person.sort((a,b)=> a.name.localeCompare(b.name));
 
 console.log(person);
+
+//shuffle an array(deck of card);
+//using the Fisher-Yates algorithm
+const cards=['A',1,2,3,4,5,6,7,8,9,10,'J','Q','K'];
+shuffle(cards);
+console.log(cards)
+function shuffle(array){
+    for(let i=array.length-1; i>0 ; i--){
+        const random=Math.floor(Math.random()* (i+1));
+
+        [array[i],array[random]]=[array[random],array[i]]
+    }
+}
+const date=new Date();
+const year=date.getFullYear();
+console.log(year)*/
+
+//closure
+function outer(){
+    let name="bro code";
+     
+    function inner(){
+        console.log(name)
+       
+    }
+    inner();
+}
+outer();
