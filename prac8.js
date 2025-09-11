@@ -62,3 +62,51 @@ function outer(){
     inner();
 }
 outer();
+let count=0;
+do{
+    count++;
+    console.log(`the count increased by ${count}`)
+}
+while(count<100)
+
+
+function createCounter(){
+    let count=0;
+
+    function increment(){
+    count++;
+    console.log(`the count increased by ${count}`)
+    }
+    return {increment};
+}
+const counter = createCounter();
+counter.increment();
+counter.increment();
+counter.increment();
+
+
+//game scoring system using closure 
+function createGame(){
+    let score=0;
+function increaseScore(points){
+    score += points;
+    console.log(`+${points}pts`)
+}
+function decreaseScore(points){
+    score -= points;
+    console.log(`-${points}pts`)
+}
+
+function getScore(){
+    return score;
+}
+return{increaseScore,decreaseScore,getScore}
+}
+
+const game = createGame();
+
+game.increaseScore(10);
+game.increaseScore(2);
+game.decreaseScore(300);
+console.log(`the final score is ${game.getScore()}pts`);
+
