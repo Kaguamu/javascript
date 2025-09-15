@@ -1,5 +1,4 @@
-/*import {PI,getCircumference,getArea} from './module_example.js';
- 
+import {PI,getCircumference,getArea} from './module_example.js';
 console.log(PI);
 const Area=getArea(7);
 console.log(`Area:${Area}`)
@@ -36,5 +35,4 @@ const fruits=document.getElementsByClassName("fruits");
 fruits[0].style.backgroundColor="yellow";
 fruits[1].style.backgroundColor="blue";
 fruits[2].style.backgroundColor="pink";
-
 console.log(fruits)
