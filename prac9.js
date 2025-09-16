@@ -36,3 +36,15 @@ fruits[0].style.backgroundColor="yellow";
 fruits[1].style.backgroundColor="blue";
 fruits[2].style.backgroundColor="pink";
 console.log(fruits)
+
+
+const myH1=document.getElementById("h1");
+myH1.style.backgroundColor="red";
+const fruits=document.getElementsByClassName("fruits");
+fruits[0].style.backgroundColor="yellow"
+fruits[1].style.backgroundColor="blue"
+fruits[2].style.backgroundColor="green"
+fruits[0].style.fontWeight="bold"
+fruits[1].style.fontSize="2em"
+console.log(fruits)
+
