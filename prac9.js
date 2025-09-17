@@ -29,15 +29,13 @@ catch(error){
 console.log("You have reached the end!")*/
 
 
-//DOM doccument object Model;
-
+//DOM doccument object Model; getting element  by  class name 
 const fruits=document.getElementsByClassName("fruits");
 fruits[0].style.backgroundColor="yellow";
 fruits[1].style.backgroundColor="blue";
 fruits[2].style.backgroundColor="pink";
 console.log(fruits)
-
-
+//getting element  by  class name 
 const myH1=document.getElementById("h1");
 myH1.style.backgroundColor="red";
 const fruits=document.getElementsByClassName("fruits");
@@ -46,5 +44,26 @@ fruits[1].style.backgroundColor="blue"
 fruits[2].style.backgroundColor="green"
 fruits[0].style.fontWeight="bold"
 fruits[1].style.fontSize="2em"
-console.log(fruits)
+console.log(fruits);
+
+Array.from(fruits).forEach(fruit=> {
+    fruit.style.backgroundColor="yellow"   
+});
+
+const h4elements=document.getElementsByTagName("h4");
+for(let h4element of h4elements){
+    h4element.style.backgroundColor="yellow";
+}
+
+h4elements[0].style.backgroundColor="blue";
+console.log(h4elements)
+
+//getting element by tag name 
+const liElements=document.getElementsByTagName("li");
+liElements[4].style.backgroundColor="pink";
+for(let liElement of liElements){
+    liElement.style.backgroundColor="purple";
+
+
+
 
