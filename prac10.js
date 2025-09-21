@@ -21,3 +21,19 @@ listItems.textContent = "Coconut";
 const orange=document.getElementById("orange");
 // document.getElementById("fruits").append(listItems);
 document.getElementById("fruits").insertBefore(listItems,orange);
+//mouse events
+const box=document.getElementById("box");
+box.addEventListener("click",function changeColor(event){
+    event.target.style.backgroundColor="red"
+    event.target.style.textContent="Stop 😡"
+});
+
+box.addEventListener("mouseover",function changeColor(event){
+    event.target.style.backgroundColor="yellow"
+    event.target.style.textContent="Don't do it😲"
+});
+
+box.addEventListener("mouseout",function changeColor(event){
+    event.target.style.backgroundColor="greenyellow"
+    event.target.style.textContent="Click me😅"
+});
