@@ -35,7 +35,7 @@ document.head.appendChild(style);
 const API_URL = "https://www.omdbapi.com/";
 const API_KEY = "demo";
 
-// --- Local Storage Helpers ---
+// Local Storage Helpers
 const saveCache = (key, data) => localStorage.setItem(key, JSON.stringify(data));
 const loadCache = (key) => JSON.parse(localStorage.getItem(key)) || null;
 
@@ -62,7 +62,7 @@ async function fetchMovies(query) {
   }
 }
 
-// --- Display Movies ---
+//Display Movies
 function displayMovies(movies) {
   results.innerHTML = "";
   movies.forEach(({ Title, Year, Poster, imdbID }) => {
@@ -85,13 +85,13 @@ function displayMovies(movies) {
   });
 }
 
-// --- Show Movie Details ---
+//Show Movie Detail
 async function showDetails(id) {
   try {
     results.innerHTML = "<p>Loading details...</p>";
     const res = await fetch(`${API_URL}?i=${id}&apikey=${API_KEY}`);
     const data = await res.json();
-    results.innerHTML = `
+    results.innerHTML = 
       <div class="movie">
         <img src="${data.Poster}" alt="${data.Title}" />
         <div>
@@ -108,7 +108,7 @@ async function showDetails(id) {
   }
 }
 
-// --- Event Handling ---
+//Event Handling
 button.addEventListener("click", () => {
   const query = input.value.trim();
   if (query) fetchMovies(query);
@@ -117,5 +117,6 @@ button.addEventListener("click", () => {
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") fetchMovies(input.value.trim());
 });
+
 
 
