@@ -1,4 +1,4 @@
-// 🎬 Movie Search App (100 lines)
+// Movie Search App
 const app = document.createElement("div");
 app.id = "movieApp";
 document.body.appendChild(app);
@@ -117,3 +117,4 @@ button.addEventListener("click", () => {
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") fetchMovies(input.value.trim());
 });
+
