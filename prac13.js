@@ -33,9 +33,9 @@ class UserManager {
         }, 1000);
       });
       this.users = data;
-      console.log("✅ Users fetched successfully");
+      console.log("Users fetched successfully");
     } catch (error) {
-      console.error("❌ Failed to fetch users:", error);
+      console.error("Failed to fetch users:", error);
     }
   }
 
@@ -45,7 +45,7 @@ class UserManager {
 
   displayUsers(targetId) {
     const container = document.getElementById(targetId);
-    if (!container) return console.error("⚠️ Container not found!");
+    if (!container) return console.error("Container not found!");
 
     container.innerHTML = "";
     this.getActiveUsers().forEach((user) => {
@@ -62,3 +62,4 @@ class UserManager {
   await manager.fetchUsers();
   manager.displayUsers("userList");
 })();
+
