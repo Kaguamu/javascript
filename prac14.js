@@ -33,7 +33,7 @@ document.head.appendChild(style);
 
 // --- API Config ---
 const API_URL = "https://www.omdbapi.com/";
-const API_KEY = "demo"; // Replace with your key for real use
+const API_KEY = "demo";
 
 // --- Local Storage Helpers ---
 const saveCache = (key, data) => localStorage.setItem(key, JSON.stringify(data));
@@ -58,7 +58,7 @@ async function fetchMovies(query) {
     saveCache(cacheKey, data.Search);
     displayMovies(data.Search);
   } catch (err) {
-    results.innerHTML = `<p style="color:red;">❌ ${err.message}</p>`;
+    results.innerHTML = `<p style="color:red;"> ${err.message}</p>`;
   }
 }
 
@@ -117,4 +117,5 @@ button.addEventListener("click", () => {
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") fetchMovies(input.value.trim());
 });
+
 
