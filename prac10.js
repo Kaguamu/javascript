@@ -30,11 +30,12 @@ box.addEventListener("click",function changeColor(event){
 
 box.addEventListener("mouseover",function changeColor(event){
     event.target.style.backgroundColor="yellow"
-    event.target.style.textContent="Don't do it😲"
+    event.target.style.textContent="Don't do it"
 });
 
 box.addEventListener("mouseout",function changeColor(event){
     event.target.style.backgroundColor="greenyellow"
-    event.target.style.textContent="Click me😅"
+    event.target.style.textContent="Click me"
 });
+
 
