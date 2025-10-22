@@ -38,7 +38,7 @@ const getCoordinates = async (city) => {
 };
 
 const displayWeather = (city, temp) => {
-  result.innerHTML = `<h3>${city}</h3><p>🌡️ ${temp}°C</p>`;
+  result.innerHTML = `<h3>${city}</h3><p>${temp}°C</p>`;
 };
 
 const cacheWeather = (city, temp) => {
@@ -51,3 +51,4 @@ button.addEventListener("click", () => {
   const city = input.value.trim();
   if (city) getWeather(city);
 });
+
