@@ -25,7 +25,7 @@ document.getElementById("fruits").insertBefore(listItems,orange);
 const box=document.getElementById("box");
 box.addEventListener("click",function changeColor(event){
     event.target.style.backgroundColor="red"
-    event.target.style.textContent="Stop 😡"
+    event.target.style.textContent="Stop
 });
 
 box.addEventListener("mouseover",function changeColor(event){
@@ -37,3 +37,4 @@ box.addEventListener("mouseout",function changeColor(event){
     event.target.style.backgroundColor="greenyellow"
     event.target.style.textContent="Click me😅"
 });
+
