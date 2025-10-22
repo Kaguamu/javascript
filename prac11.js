@@ -11,7 +11,7 @@ document.body.appendChild(app);
 const header = document.createElement("header");
 header.innerHTML = `
   <h1>Task Manager</h1>
-  <button id="themeToggle">🌙</button>
+  <button id="themeToggle"></button>
 `;
 const inputDiv = document.createElement("div");
 inputDiv.className = "inputDiv";
@@ -64,10 +64,10 @@ const themeToggle = document.getElementById("themeToggle");
 const updateTheme = () => {
   if (darkMode) {
     document.body.classList.add("dark");
-    themeToggle.textContent = "☀️";
+    themeToggle.textContent = "";
   } else {
     document.body.classList.remove("dark");
-    themeToggle.textContent = "🌙";
+    themeToggle.textContent = "";
   }
   localStorage.setItem("darkMode", JSON.stringify(darkMode));
 };
@@ -148,12 +148,12 @@ function renderTasks() {
     const actions = document.createElement("div");
 
     const editBtn = document.createElement("button");
-    editBtn.textContent = "✏️";
+    editBtn.textContent = "";
     editBtn.title = "Edit";
     editBtn.onclick = () => editTask(task.id);
 
     const delBtn = document.createElement("button");
-    delBtn.textContent = "🗑️";
+    delBtn.textContent = "";
     delBtn.title = "Delete";
     delBtn.onclick = () => deleteTask(task.id);
 
@@ -163,6 +163,7 @@ function renderTasks() {
   });
 }
 
-// ---------- INIT ----------
+//INIT
 renderTasks();
+
 
