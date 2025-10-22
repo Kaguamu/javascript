@@ -1,4 +1,4 @@
-// 🧠 Task Manager App (200 lines of pure JS)
+// Task Manager App
 
 document.body.style.margin = "0";
 document.body.style.fontFamily = "Poppins, sans-serif";
@@ -10,7 +10,7 @@ document.body.appendChild(app);
 
 const header = document.createElement("header");
 header.innerHTML = `
-  <h1>🧠 Task Manager</h1>
+  <h1>Task Manager</h1>
   <button id="themeToggle">🌙</button>
 `;
 const inputDiv = document.createElement("div");
@@ -165,3 +165,4 @@ function renderTasks() {
 
 // ---------- INIT ----------
 renderTasks();
+
