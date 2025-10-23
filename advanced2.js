@@ -1,6 +1,6 @@
 
-// Includes: Reflect API, Symbols, Iterators, Async Iterators, Custom Errors,
-// Tagged Templates, WeakRefs, FinalizationRegistry, Dynamic Imports, etc.
+//Reflect API, Symbols, Iterators, Async Iterators, Custom Errors,
+// Tagged Templates, WeakRefs, FinalizationRegistry, Dynamic Imports.
 
 // Custom Error hierarchy
 class AppError extends Error {
