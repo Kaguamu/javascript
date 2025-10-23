@@ -1,9 +1,8 @@
 // Task Manager App
-
 document.body.style.margin = "0";
 document.body.style.fontFamily = "Poppins, sans-serif";
 
-// ---------- UI CREATION ----------
+//UI
 const app = document.createElement("div");
 app.id = "taskApp";
 document.body.appendChild(app);
@@ -29,7 +28,7 @@ taskList.id = "taskList";
 
 app.append(header, inputDiv, searchDiv, taskList);
 
-// ---------- STYLES ----------
+//STYLES
 const style = document.createElement("style");
 style.textContent = `
   body { background:#f9fafb; color:#222; transition:0.4s; }
@@ -55,7 +54,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// ---------- LOGIC ----------
+//LOGIC
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let darkMode = JSON.parse(localStorage.getItem("darkMode")) || false;
 
@@ -122,7 +121,7 @@ function saveTasks() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
-// ---------- RENDER ----------
+//RENDER
 function renderTasks() {
   const query = searchInput.value.toLowerCase();
   taskList.innerHTML = "";
@@ -165,5 +164,6 @@ function renderTasks() {
 
 //INIT
 renderTasks();
+
 
 
