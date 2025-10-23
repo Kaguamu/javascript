@@ -1,5 +1,3 @@
-
-
 class User {
   constructor(id, name, age, active) {
     this.id = id;
@@ -62,4 +60,5 @@ class UserManager {
   await manager.fetchUsers();
   manager.displayUsers("userList");
 })();
+
 
