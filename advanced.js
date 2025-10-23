@@ -1,5 +1,4 @@
-// advanced.js — ~150 lines of advanced JavaScript utilities
-// Extended with data structures, decorators, event bus, worker helpers, deep clone, etc.
+// Extended with data structures, decorators, event bus, worker helpers, deep clonet.
 
 class Toolkit {
   constructor() { this._cache = new WeakMap(); }
