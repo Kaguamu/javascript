@@ -1,5 +1,3 @@
-//Add and change HTML using Javascript
-// creating the element
 const newH1=document.createElement("h1");
 //add attributes or properties
 newH1.textContent="i like pizza";
@@ -37,5 +35,6 @@ box.addEventListener("mouseout",function changeColor(event){
     event.target.style.backgroundColor="greenyellow"
     event.target.style.textContent="Click me"
 });
+
 
 
