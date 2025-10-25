@@ -7,10 +7,6 @@ newH1.style.textAlign="center"
 //APPEND ELEMENT TO DOM
 document.body.append(newH1);
 document.getElementById("box2").append(newh1);
-
-
-//inserting element at certain points
-//const box3=document.getElementById("box3")
 document.body.insertBefore(newH1,box1);*/
 
 const listItems = document.createElement("li");
@@ -35,6 +31,7 @@ box.addEventListener("mouseout",function changeColor(event){
     event.target.style.backgroundColor="greenyellow"
     event.target.style.textContent="Click me"
 });
+
 
 
 
