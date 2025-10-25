@@ -2,7 +2,6 @@
 document.body.style.margin = "0";
 document.body.style.fontFamily = "Poppins, sans-serif";
 
-//UI
 const app = document.createElement("div");
 app.id = "taskApp";
 document.body.appendChild(app);
@@ -28,7 +27,6 @@ taskList.id = "taskList";
 
 app.append(header, inputDiv, searchDiv, taskList);
 
-//STYLES
 const style = document.createElement("style");
 style.textContent = `
   body { background:#f9fafb; color:#222; transition:0.4s; }
@@ -164,6 +162,7 @@ function renderTasks() {
 
 //INIT
 renderTasks();
+
 
 
 
