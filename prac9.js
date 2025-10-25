@@ -53,12 +53,11 @@ for(let h4element of h4elements){
 
 h4elements[0].style.backgroundColor="blue";
 console.log(h4elements)
-
-//getting element by tag name 
 const liElements=document.getElementsByTagName("li");
 liElements[4].style.backgroundColor="pink";
 for(let liElement of liElements){
     liElement.style.backgroundColor="purple";
+
 
 
 
