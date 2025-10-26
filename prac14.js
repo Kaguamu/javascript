@@ -3,9 +3,9 @@ const app = document.createElement("div");
 app.id = "movieApp";
 document.body.appendChild(app);
 
-// --- UI Elements ---
+//UI Elements
 const title = document.createElement("h1");
-title.textContent = "🎬 Movie Finder";
+title.textContent = "Movie Finder";
 const input = document.createElement("input");
 input.placeholder = "Search movie...";
 const button = document.createElement("button");
@@ -96,8 +96,8 @@ async function showDetails(id) {
         <img src="${data.Poster}" alt="${data.Title}" />
         <div>
           <h2>${data.Title}</h2>
-          <p>🎞️ ${data.Genre}</p>
-          <p>⭐ ${data.imdbRating}/10</p>
+          <p>${data.Genre}</p>
+          <p>${data.imdbRating}/10</p>
           <p>${data.Plot}</p>
           <button id="backBtn">⬅ Back</button>
         </div>
@@ -117,6 +117,7 @@ button.addEventListener("click", () => {
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") fetchMovies(input.value.trim());
 });
+
 
 
 
