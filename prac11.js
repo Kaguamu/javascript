@@ -71,7 +71,7 @@ themeToggle.addEventListener("click", () => {
 });
 updateTheme();
 
-// ---------- TASK MANAGEMENT ----------
+//TASK MANAGEMENT
 const taskInput = document.getElementById("taskInput");
 const addBtn = document.getElementById("addTask");
 const searchInput = document.getElementById("searchInput");
@@ -159,6 +159,7 @@ function renderTasks() {
 
 //INIT
 renderTasks();
+
 
 
 
