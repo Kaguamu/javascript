@@ -10,7 +10,7 @@ const result = document.createElement("div");
 
 app.append(input, button, result);
 
-const API_KEY = "demo"; // replace with real API key if needed
+const API_KEY = "demo";
 const BASE_URL = "https://api.open-meteo.com/v1/forecast";
 
 const getWeather = async (city) => {
@@ -51,4 +51,5 @@ button.addEventListener("click", () => {
   const city = input.value.trim();
   if (city) getWeather(city);
 });
+
 
