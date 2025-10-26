@@ -52,11 +52,8 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-//LOGIC
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let darkMode = JSON.parse(localStorage.getItem("darkMode")) || false;
-
-// Toggle theme
 const themeToggle = document.getElementById("themeToggle");
 const updateTheme = () => {
   if (darkMode) {
@@ -162,6 +159,7 @@ function renderTasks() {
 
 //INIT
 renderTasks();
+
 
 
 
