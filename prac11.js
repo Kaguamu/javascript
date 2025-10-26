@@ -156,9 +156,8 @@ function renderTasks() {
     taskList.appendChild(li);
   });
 }
-
-//INIT
 renderTasks();
+
 
 
 
