@@ -1,7 +1,4 @@
 
-//Reflect API, Symbols, Iterators, Async Iterators, Custom Errors,
-// Tagged Templates, WeakRefs, FinalizationRegistry, Dynamic Imports.
-
 // Custom Error hierarchy
 class AppError extends Error {
   constructor(message){ super(message); this.name=this.constructor.name; }
