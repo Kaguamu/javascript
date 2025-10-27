@@ -1,5 +1,3 @@
-// Extended with data structures, decorators, event bus, worker helpers, deep clonet.
-
 class Toolkit {
   constructor() { this._cache = new WeakMap(); }
 
