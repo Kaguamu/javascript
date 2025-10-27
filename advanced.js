@@ -117,14 +117,8 @@ class Toolkit {
     };
     return fn=>new Promise((resolve,reject)=>{ q.push({task:fn,resolve,reject}); run(); });
   }
-
-  // Range generator
   *range(start,end,step=1){ for(let i=start;i<end;i+=step) yield i; }
-
-  // Flatten array
-  flatten(arr){ return arr.reduce((a,v)=>a.concat(Array.isArray(v)?this.flatten(v):v),[]); }
-
-  // Unique by key
+  flatten(arr){ return arr.reduce((a,v)=>a.concat(Array.isArray(v)?this.flatten(v):v),[]); 
   uniqueBy(arr, key){ const seen=new Set(); return arr.filter(x=>{const k=key(x); if(seen.has(k)) return false; seen.add(k); return true;}); }
 }
 
